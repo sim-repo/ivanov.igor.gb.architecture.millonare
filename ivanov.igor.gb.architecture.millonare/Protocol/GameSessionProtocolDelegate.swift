@@ -1,0 +1,26 @@
+//
+//  GameSessionProtocolDelegate.swift
+//  ivanov.igor.gb.architecture.millonare
+//
+//  Created by Igor Ivanov on 03.09.2020.
+//  Copyright © 2020 Igor Ivanov. All rights reserved.
+//
+
+import Foundation
+
+protocol GameSessionProtocolDelegate: AnyObject {
+    func setViewController(vc: GameViewController)
+    func setQuestionsAmount(_ questionsAmount: Int)
+    func didSelectRightAnswer()
+    func didPressHintAuditory()
+    func didPressHintCallFriend()
+    func didPressFiftyPercent()
+    func didGameFinish(winAmount: Int)
+}
+
+
+protocol ReadableGameSessionProtocolDelegate {
+    func getFullQuestionsAmount() -> Int
+    func getPassedQuestionsAmount() -> Int
+    
+}

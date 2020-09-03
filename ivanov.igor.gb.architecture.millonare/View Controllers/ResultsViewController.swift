@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ResultsViewController.swift
 //  ivanov.igor.gb.architecture.millonare
 //
 //  Created by Igor Ivanov on 03.09.2020.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
