@@ -10,17 +10,18 @@ import Foundation
 
 protocol GameSessionProtocolDelegate: AnyObject {
     func setViewController(vc: GameViewController)
-    func setQuestionsAmount(_ questionsAmount: Int)
+    func getNextQuestion() -> QuestionModel? // #strategy
     func didSelectRightAnswer()
     func didPressHintAuditory()
     func didPressHintCallFriend()
     func didPressFiftyPercent()
     func didGameFinish(winAmount: Int)
+    func getQuestionNumber() -> Observable<Int>
 }
 
 
-protocol ReadableGameSessionProtocolDelegate {
+protocol StatisticableGameSessionProtocol: AnyObject {
     func getFullQuestionsAmount() -> Int
     func getPassedQuestionsAmount() -> Int
-    
+    func getUsedQuestionModels() -> [QuestionModel]?
 }

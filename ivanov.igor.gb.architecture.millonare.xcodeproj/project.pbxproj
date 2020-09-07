@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1623B7DA2504EEF700315D53 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7D92504EEF700315D53 /* OptionsViewController.swift */; };
+		1623B7DD2504F27000315D53 /* QuestionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7DC2504F27000315D53 /* QuestionBuilder.swift */; };
+		1623B7DF2504F31E00315D53 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7DE2504F31E00315D53 /* QuestionModel.swift */; };
+		1623B7E22504F70100315D53 /* AnswerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7E12504F70100315D53 /* AnswerEnum.swift */; };
+		1623B7E42504F89200315D53 /* Tags in Resources */ = {isa = PBXBuildFile; fileRef = 1623B7E32504F89200315D53 /* Tags */; };
+		1623B7E62505187300315D53 /* CreateQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7E52505187300315D53 /* CreateQuestionsViewController.swift */; };
+		1623B7E825051E5400315D53 /* QuestionSequenceEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7E725051E5400315D53 /* QuestionSequenceEnum.swift */; };
+		1623B7EB2505201E00315D53 /* QuestionStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7EA2505201E00315D53 /* QuestionStrategyProtocol.swift */; };
+		1623B7ED250521C000315D53 /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7EC250521C000315D53 /* RandomQuestionStrategy.swift */; };
+		1623B7EF250521D300315D53 /* SequenceQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7EE250521D300315D53 /* SequenceQuestionStrategy.swift */; };
+		1623B7F2250527D700315D53 /* HashableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7F1250527D700315D53 /* HashableClass.swift */; };
+		1623B7F425052D7000315D53 /* QuestionStrategyChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7F325052D7000315D53 /* QuestionStrategyChooser.swift */; };
+		1623B7F72505531300315D53 /* CreateQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7F62505531300315D53 /* CreateQuestionTableViewCell.swift */; };
+		1623B7FA2505802A00315D53 /* HintFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7F92505802A00315D53 /* HintFacade.swift */; };
+		1623B7FC2505803F00315D53 /* HintEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7FB2505803F00315D53 /* HintEnum.swift */; };
+		1623B7FE2505825B00315D53 /* HintAuditoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7FD2505825B00315D53 /* HintAuditoryService.swift */; };
+		1623B8002505826A00315D53 /* HintCallFriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B7FF2505826A00315D53 /* HintCallFriendService.swift */; };
+		1623B8022505827700315D53 /* HintFiftyPercentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623B8012505827700315D53 /* HintFiftyPercentService.swift */; };
+		16707EF825061EE500706CE4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16707EF725061EE500706CE4 /* Observable.swift */; };
 		169636512500D17300C8B678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169636502500D17300C8B678 /* AppDelegate.swift */; };
 		169636532500D17300C8B678 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169636522500D17300C8B678 /* SceneDelegate.swift */; };
 		169636582500D17300C8B678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169636562500D17300C8B678 /* Main.storyboard */; };
@@ -25,6 +44,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1623B7D92504EEF700315D53 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		1623B7DC2504F27000315D53 /* QuestionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBuilder.swift; sourceTree = "<group>"; };
+		1623B7DE2504F31E00315D53 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		1623B7E12504F70100315D53 /* AnswerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerEnum.swift; sourceTree = "<group>"; };
+		1623B7E32504F89200315D53 /* Tags */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tags; sourceTree = "<group>"; };
+		1623B7E52505187300315D53 /* CreateQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionsViewController.swift; sourceTree = "<group>"; };
+		1623B7E725051E5400315D53 /* QuestionSequenceEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSequenceEnum.swift; sourceTree = "<group>"; };
+		1623B7EA2505201E00315D53 /* QuestionStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategyProtocol.swift; sourceTree = "<group>"; };
+		1623B7EC250521C000315D53 /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
+		1623B7EE250521D300315D53 /* SequenceQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceQuestionStrategy.swift; sourceTree = "<group>"; };
+		1623B7F1250527D700315D53 /* HashableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClass.swift; sourceTree = "<group>"; };
+		1623B7F325052D7000315D53 /* QuestionStrategyChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategyChooser.swift; sourceTree = "<group>"; };
+		1623B7F62505531300315D53 /* CreateQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		1623B7F92505802A00315D53 /* HintFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintFacade.swift; sourceTree = "<group>"; };
+		1623B7FB2505803F00315D53 /* HintEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintEnum.swift; sourceTree = "<group>"; };
+		1623B7FD2505825B00315D53 /* HintAuditoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintAuditoryService.swift; sourceTree = "<group>"; };
+		1623B7FF2505826A00315D53 /* HintCallFriendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintCallFriendService.swift; sourceTree = "<group>"; };
+		1623B8012505827700315D53 /* HintFiftyPercentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintFiftyPercentService.swift; sourceTree = "<group>"; };
+		16707EF725061EE500706CE4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1696364D2500D17300C8B678 /* ivanov.igor.gb.architecture.millonare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ivanov.igor.gb.architecture.millonare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169636502500D17300C8B678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		169636522500D17300C8B678 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +93,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1623B7DB2504F26100315D53 /* Question Builder */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7DC2504F27000315D53 /* QuestionBuilder.swift */,
+			);
+			path = "Question Builder";
+			sourceTree = "<group>";
+		};
+		1623B7E02504F6F800315D53 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7E12504F70100315D53 /* AnswerEnum.swift */,
+				1623B7E725051E5400315D53 /* QuestionSequenceEnum.swift */,
+				1623B7FB2505803F00315D53 /* HintEnum.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		1623B7E925051FF300315D53 /* Question Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7EA2505201E00315D53 /* QuestionStrategyProtocol.swift */,
+				1623B7EC250521C000315D53 /* RandomQuestionStrategy.swift */,
+				1623B7EE250521D300315D53 /* SequenceQuestionStrategy.swift */,
+				1623B7F325052D7000315D53 /* QuestionStrategyChooser.swift */,
+			);
+			path = "Question Strategy";
+			sourceTree = "<group>";
+		};
+		1623B7F0250527C300315D53 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7F1250527D700315D53 /* HashableClass.swift */,
+				16707EF725061EE500706CE4 /* Observable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1623B7F5250552F500315D53 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7F62505531300315D53 /* CreateQuestionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1623B7F82505801400315D53 /* Hint Facade */ = {
+			isa = PBXGroup;
+			children = (
+				1623B7F92505802A00315D53 /* HintFacade.swift */,
+				1623B7FD2505825B00315D53 /* HintAuditoryService.swift */,
+				1623B7FF2505826A00315D53 /* HintCallFriendService.swift */,
+				1623B8012505827700315D53 /* HintFiftyPercentService.swift */,
+			);
+			path = "Hint Facade";
+			sourceTree = "<group>";
+		};
 		169636442500D17300C8B678 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +169,8 @@
 		1696364F2500D17300C8B678 /* ivanov.igor.gb.architecture.millonare */ = {
 			isa = PBXGroup;
 			children = (
+				1623B7F0250527C300315D53 /* Helper */,
+				1623B7E02504F6F800315D53 /* Constant */,
 				169636792500F53900C8B678 /* Services */,
 				169636762500E73200C8B678 /* Questions */,
 				169636712500D54B00C8B678 /* Autogen */,
@@ -84,6 +181,7 @@
 				1696365E2500D17400C8B678 /* Info.plist */,
 				169636642500D22800C8B678 /* Game.swift */,
 				169636662500D23300C8B678 /* GameSession.swift */,
+				1623B7E32504F89200315D53 /* Tags */,
 			);
 			path = ivanov.igor.gb.architecture.millonare;
 			sourceTree = "<group>";
@@ -101,9 +199,12 @@
 		169636692500D36B00C8B678 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1623B7F5250552F500315D53 /* Cells */,
 				1696366A2500D3A200C8B678 /* GameViewController.swift */,
 				1696366C2500D40D00C8B678 /* MenuViewController.swift */,
 				169636742500DF6700C8B678 /* ResultsViewController.swift */,
+				1623B7D92504EEF700315D53 /* OptionsViewController.swift */,
+				1623B7E52505187300315D53 /* CreateQuestionsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,6 +238,9 @@
 		169636792500F53900C8B678 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1623B7F82505801400315D53 /* Hint Facade */,
+				1623B7E925051FF300315D53 /* Question Strategy */,
+				1623B7DB2504F26100315D53 /* Question Builder */,
 				1696367A2500F54200C8B678 /* File Manager */,
 			);
 			path = Services;
@@ -154,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				1696367E2500F58E00C8B678 /* GameResult.swift */,
+				1623B7DE2504F31E00315D53 /* QuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +324,7 @@
 				1696365D2500D17400C8B678 /* LaunchScreen.storyboard in Resources */,
 				1696365A2500D17400C8B678 /* Assets.xcassets in Resources */,
 				169636582500D17300C8B678 /* Main.storyboard in Resources */,
+				1623B7E42504F89200315D53 /* Tags in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,12 +337,30 @@
 			files = (
 				169636512500D17300C8B678 /* AppDelegate.swift in Sources */,
 				169636672500D23300C8B678 /* GameSession.swift in Sources */,
+				1623B7F2250527D700315D53 /* HashableClass.swift in Sources */,
 				1696366D2500D40D00C8B678 /* MenuViewController.swift in Sources */,
 				169636782500E74200C8B678 /* Questions.swift in Sources */,
 				169636532500D17300C8B678 /* SceneDelegate.swift in Sources */,
+				1623B7E22504F70100315D53 /* AnswerEnum.swift in Sources */,
 				1696366B2500D3A200C8B678 /* GameViewController.swift in Sources */,
+				1623B7E825051E5400315D53 /* QuestionSequenceEnum.swift in Sources */,
+				1623B7F72505531300315D53 /* CreateQuestionTableViewCell.swift in Sources */,
+				1623B8002505826A00315D53 /* HintCallFriendService.swift in Sources */,
+				1623B7F425052D7000315D53 /* QuestionStrategyChooser.swift in Sources */,
 				169636752500DF6700C8B678 /* ResultsViewController.swift in Sources */,
 				1696367C2500F55200C8B678 /* FileManager.swift in Sources */,
+				1623B7E62505187300315D53 /* CreateQuestionsViewController.swift in Sources */,
+				1623B7DA2504EEF700315D53 /* OptionsViewController.swift in Sources */,
+				16707EF825061EE500706CE4 /* Observable.swift in Sources */,
+				1623B7FA2505802A00315D53 /* HintFacade.swift in Sources */,
+				1623B7DF2504F31E00315D53 /* QuestionModel.swift in Sources */,
+				1623B7DD2504F27000315D53 /* QuestionBuilder.swift in Sources */,
+				1623B8022505827700315D53 /* HintFiftyPercentService.swift in Sources */,
+				1623B7EB2505201E00315D53 /* QuestionStrategyProtocol.swift in Sources */,
+				1623B7FE2505825B00315D53 /* HintAuditoryService.swift in Sources */,
+				1623B7FC2505803F00315D53 /* HintEnum.swift in Sources */,
+				1623B7ED250521C000315D53 /* RandomQuestionStrategy.swift in Sources */,
+				1623B7EF250521D300315D53 /* SequenceQuestionStrategy.swift in Sources */,
 				1696367F2500F58E00C8B678 /* GameResult.swift in Sources */,
 				169636732500D94100C8B678 /* GameSessionProtocolDelegate.swift in Sources */,
 				169636652500D22800C8B678 /* Game.swift in Sources */,

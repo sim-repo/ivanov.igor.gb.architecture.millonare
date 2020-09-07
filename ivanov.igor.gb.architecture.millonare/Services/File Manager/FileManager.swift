@@ -96,3 +96,46 @@ extension FilesManager {
         return nil
     }
 }
+
+
+//MARK:- Question Model
+// #memento:
+extension FilesManager {
+    
+    func saveNewQuestionModels(questionModels: [QuestionModel]) {
+        var allQuestions: [QuestionModel] = []
+        if let oldQuestions = loadQuestionModels() {
+            allQuestions.append(contentsOf: oldQuestions)
+        }
+        setIds(questionModels, lastIdx: allQuestions.count-1)
+        allQuestions.append(contentsOf: questionModels)
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(allQuestions)
+            try save(fileNamed: "questions", data: data)
+        } catch let err {
+            print(err)
+        }
+    }
+    
+    private func setIds(_ questionModels: [QuestionModel], lastIdx: Int) {
+        var idx = lastIdx
+        for q in questionModels {
+            idx += 1
+            q.id = idx
+        }
+    }
+    
+    
+    func loadQuestionModels() -> [QuestionModel]? {
+        do {
+            let data = try read(fileNamed: "questions")
+            let decoder = JSONDecoder()
+            let results = try decoder.decode([QuestionModel].self, from: data)
+            return results
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
+}

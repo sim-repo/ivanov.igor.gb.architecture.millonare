@@ -13,16 +13,17 @@ final class Game {
     static var shared: Game = Game()
     private init() {}
     
-    private var gameSession: ReadableGameSessionProtocolDelegate?
+    private var gameSession: StatisticableGameSessionProtocol?
     private var vc: MenuViewController?
     private var gameResults: [GameResult] = []
-    
+    private var questionSequenceEnum: QuestionSequenceEnum = .sequence// #strategy
+
     
     public func setViewController(vc: MenuViewController) {
         self.vc = vc
     }
     
-    public func getGameSession() -> ReadableGameSessionProtocolDelegate? {
+    public func getGameSession() -> StatisticableGameSessionProtocol? {
         return gameSession
     }
     
@@ -31,12 +32,32 @@ final class Game {
         gameResults.append(gameResult)
         FilesManager.shared.saveGameResult(results: gameResults)
     }
+    
+    public func getQuestionSeguenceEnum() -> QuestionSequenceEnum {
+        return questionSequenceEnum
+    }
 }
 
 //MARK:- prevent create clone
 extension Game: NSCopying {
     func copy(with zone: NSZone? = nil) -> Any {
         return self
+    }
+}
+
+
+
+extension Game {
+    
+    //#strategy
+    public func setQuestionSequence(sequence: QuestionSequenceEnum) {
+        self.questionSequenceEnum = sequence
+    }
+    
+
+    //#memento
+    public func addQuestions(newQuestionModels: [QuestionModel]) {
+        return FilesManager.shared.saveNewQuestionModels(questionModels: newQuestionModels)
     }
 }
 

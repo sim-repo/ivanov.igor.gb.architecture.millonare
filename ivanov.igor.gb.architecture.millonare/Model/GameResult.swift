@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class GameResult: Codable{
+final class GameResult: Codable {
     
     var questionsPassedAmount: Int = 0
     var questionsFullAmount: Int = 0

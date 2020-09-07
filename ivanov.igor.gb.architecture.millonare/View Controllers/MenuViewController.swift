@@ -40,6 +40,16 @@ extension MenuViewController {
         Game.shared.didPressResults()
         performSegue(withIdentifier: "segueResults", sender: nil)
     }
+    
+    
+    @IBAction func pressOptions(_ sender: Any) {
+        performSegue(withIdentifier: "segueOptions", sender: nil)
+    }
+    
+    @IBAction func pressCreateQuestions(_ sender: Any) {
+        performSegue(withIdentifier: "segueCreateQuestions", sender: nil)
+    }
+    
 }
 
 
@@ -49,14 +59,24 @@ extension MenuViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "seguePlay",
             let vc = segue.destination as? GameViewController {
-                guard let session = Game.shared.getGameSession() as? GameSessionProtocolDelegate else { return }
-                vc.setup(gameSession: session)
-                return
+            guard let session = Game.shared.getGameSession() as? GameSessionProtocolDelegate else { return }
+            vc.setup(gameSession: session)
+            return
         }
         
         if segue.identifier == "segueResults",
             let vc = segue.destination as? ResultsViewController {
-                return
-            }
+            return
         }
+        
+        if segue.identifier == "segueOptions",
+            let vc = segue.destination as? OptionsViewController {
+            return
+        }
+        
+        if segue.identifier == "segueCreateQuestions",
+            let vc = segue.destination as? CreateQuestionsViewController {
+            return
+        }
+    }
 }

@@ -9,19 +9,12 @@
 import Foundation
 
 
-struct Question {
-    var questionText: String
-    var answerA: String
-    var answerB: String
-    var answerC: String
-    var answerD: String
-    var rightAnswerId: Int
-}
-
-func getQuestions() -> [Question] {
-    
-    return [
-        Question(questionText: "Какой цвет у крокодила?", answerA: "Желтый", answerB: "Зеленый", answerC: "Красный", answerD: "Синий", rightAnswerId: 1),
-        Question(questionText: "Кто основал компанию Apple?", answerA: "Цукерберг", answerB: "Билл Гейтс", answerC: "Стив Джобс", answerD: "Сергей Брин", rightAnswerId: 2)
-    ]
+class Defaults {
+    static func getDefaultQuestions() -> [QuestionModel] {
+        
+        return [
+            QuestionModel(id: 0, questionText: "Какой цвет у крокодила?", answerA: "Желтый", answerB: "Зеленый", answerC: "Красный", answerD: "Синий", trueAnswerEnum: .B),
+            QuestionModel(id: 1, questionText: "Кто основал компанию Apple?", answerA: "Цукерберг", answerB: "Билл Гейтс", answerC: "Стив Джобс", answerD: "Сергей Брин", trueAnswerEnum: .C)
+        ]
+    }
 }
